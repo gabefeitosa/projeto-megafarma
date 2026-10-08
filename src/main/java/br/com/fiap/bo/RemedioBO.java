@@ -15,11 +15,14 @@ public class RemedioBO {
         return remedioDAO.findAll();
     }
 
-    public  RemedioTO save(RemedioTO remedio){
+    public RemedioTO findByCodigo(Long codigo){
         remedioDAO = new RemedioDAO();
-        // verificando se o remédio está vencido
-        if (remedio.getDataDeValidade().isBefore(LocalDate.now()))
-            return null;
+
+        return remedioDAO.findByCodigo(codigo);
+    }
+
+    public RemedioTO save(RemedioTO remedio){
+        remedioDAO = new RemedioDAO();
 
         return remedioDAO.save(remedio);
     }
