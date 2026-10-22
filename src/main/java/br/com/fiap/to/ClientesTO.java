@@ -2,14 +2,14 @@ package br.com.fiap.to;
 
 import java.time.LocalDate;
 
-public class Clientes {
+public class ClientesTO {
     private Long codigo;
     private String nome;
     private String cpf;
     private String email;
     private LocalDate dataDeNascimento;
 
-    public Clientes(){}
+    public ClientesTO(){}
 
     public Long getCodigo() {
         return codigo;

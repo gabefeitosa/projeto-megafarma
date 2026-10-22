@@ -1,11 +1,11 @@
 package br.com.fiap.to;
 
-public class ItensVendidos {
+public class ItensVendidosTO {
     private Long codVenda;
     private Long codRemedio;
     private Integer quantidade;
 
-    public ItensVendidos(){};
+    public ItensVendidosTO(){};
 
     public Long getCodVenda() {
         return codVenda;
