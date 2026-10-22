@@ -1,9 +1,12 @@
 package br.com.fiap.to;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PositiveOrZero;
+
 public class ItensVendidosTO {
     private Long codVenda;
     private Long codRemedio;
-    private Integer quantidade;
+    @PositiveOrZero @NotNull private Integer quantidade;
 
     public ItensVendidosTO(){};
 
